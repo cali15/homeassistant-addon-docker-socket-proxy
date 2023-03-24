@@ -1,7 +1,7 @@
 ---
 name: Docker Socket Proxy
 version: dev
-slug: docket-socket-prxy
+slug: docker-socket-prxy
 description: It is a self-hosted monitoring tool like "Uptime Robot"
 url: https://github.com/hassio-addons/docker-socket-proxy
 codenotary: codenotary@frenck.dev
