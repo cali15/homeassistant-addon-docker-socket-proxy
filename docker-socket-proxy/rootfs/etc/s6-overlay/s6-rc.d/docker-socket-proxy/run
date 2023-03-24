@@ -1,0 +1,10 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Community Add-on: Uptime Kuma
+# Starts Uptime Kuma
+# ==============================================================================
+
+bashio::log.info "Starting Uptime Docker Socket Proxy..."
+#!/bin/sh
+exec haproxy -f /usr/local/etc/haproxy/haproxy.cfg

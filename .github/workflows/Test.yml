@@ -20,6 +20,6 @@ jobs:
           --test \
           --no-cache \
           --${{ matrix.arch }} \
-          --target tailscale
+          --target docker-socket-proxy
       env:
         CAS_API_KEY: ${{ secrets.CAS_TOKEN }}

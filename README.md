@@ -1,17 +1,4 @@
-# Home Assistant Community Add-on: Tailscale
-
-![Warning][warning_stripe]
-
-> This is a **fork** of the [community add-on][community_addon]!
->
-> **Installation:** Navigate in your Home Assistant frontend to **Settings** ->
-> **Add-ons** -> **Add-on Store**, in the **...** menu at the top right corner
-> click **Repositories**, add
-> `https://github.com/cali15/homeassistant-addon-tailscale` as repository.
->
-> [For more details, please read the full add-on documentation][docs]
-
-![Warning][warning_stripe]
+# Home Assistant Community Add-on: Uptime Kuma
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -34,16 +21,16 @@
 
 [![Support Frenck on Patreon][patreon-shield]][patreon]
 
-Zero config VPN for building secure networks.
+It is a self-hosted monitoring tool like "Uptime Robot".
 
 ## About
 
-Tailscale is a zero config VPN, which installs on any device in minutes,
-including your Home Assistant instance.
+Uptime Kuma is an open source monitor tools, which can be best
+compared to a self-hosted variant of a commercial service like "Uptime Robot".
 
-Create a secure network between your servers, computers, and cloud instances.
-Even when separated by firewalls or subnets, Tailscale just works. Tailscale
-manages firewall rules for you, and works from anywhere you are.
+It enables you to monitor services over HTTP/S, TCP, DNS, and other protocols
+and it can send you notifications of downtime or trigger an Home Assistant
+automation webhook.
 
 [:books: Read the full add-on documentation][docs]
 
@@ -60,8 +47,7 @@ You have several options to get them answered:
 - The Home Assistant [Community Forum][forum].
 - Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
 
-You could also [open an issue here with the original add-on][issue] or [open an
-issue here with the forked add-on][issue_forked] GitHub.
+You could also [open an issue here][issue] GitHub.
 
 ## Contributing
 
@@ -69,7 +55,7 @@ This is an active open-source project. We are always open to people who want to
 use the code or contribute to it.
 
 We have set up a separate document containing our
-[contribution guidelines](,github/CONTRIBUTING.md).
+[contribution guidelines](.github/CONTRIBUTING.md).
 
 Thank you for being involved! :heart_eyes:
 
@@ -91,7 +77,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2021-2023 Franck Nijhof
+Copyright (c) 2022-2023 Franck Nijhof
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -115,31 +101,29 @@ SOFTWARE.
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/cali15/homeassistant-addon-tailscale.svg
-[commits]: https://github.com/cali15/homeassistant-addon-tailscale/commits/main
-[contributors]: https://github.com/cali15/homeassistant-addon-tailscale/graphs/contributors
+[commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-uptime-kuma.svg
+[commits]: https://github.com/hassio-addons/addon-uptime-kuma/commits/master
+[contributors]: https://github.com/hassio-addons/addon-uptime-kuma/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/cali15/homeassistant-addon-tailscale/blob/main/tailscale/DOCS.md
+[docs]: https://github.com/hassio-addons/addon-uptime-kuma/blob/master/uptime-kuma/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/?u=frenck
 [frenck]: https://github.com/frenck
-[github-actions-shield]: https://github.com/cali15/homeassistant-addon-tailscale/workflows/Publish/badge.svg
-[github-actions]: https://github.com/cali15/homeassistant-addon-tailscale/actions
+[github-actions-shield]: https://github.com/hassio-addons/addon-uptime-kuma/workflows/CI/badge.svg
+[github-actions]: https://github.com/hassio-addons/addon-uptime-kuma/actions
 [github-sponsors-shield]: https://frenck.dev/wp-content/uploads/2019/12/github_sponsor.png
 [github-sponsors]: https://github.com/sponsors/frenck
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[issue]: https://github.com/hassio-addons/addon-tailscale/issues
-[issue_forked]: https://github.com/cali15/homeassistant-addon-tailscale/issues
-[license-shield]: https://img.shields.io/github/license/cali15/homeassistant-addon-tailscale.svg
+[issue]: https://github.com/hassio-addons/addon-uptime-kuma/issues
+[license-shield]: https://img.shields.io/github/license/hassio-addons/addon-uptime-kuma.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
+[nodered-docs]: https://nodered.org/docs
 [patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
 [patreon]: https://www.patreon.com/frenck
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [reddit]: https://reddit.com/r/homeassistant
-[releases-shield]: https://img.shields.io/github/release/cali15/homeassistant-addon-tailscale.svg
-[releases]: https://github.com/cali15/homeassistant-addon-tailscale/releases
+[releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-uptime-kuma.svg
+[releases]: https://github.com/hassio-addons/addon-uptime-kuma/releases
 [repository]: https://github.com/hassio-addons/repository
-[warning_stripe]: https://github.com/cali15/homeassistant-addon-tailscale/raw/main/images/warning_stripe_wide.png
-[community_addon]: https://github.com/hassio-addons/addon-tailscale
