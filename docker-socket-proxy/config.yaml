@@ -1,19 +1,32 @@
 ---
-name: Docker Socket Proxy
-version: dev
-slug: docker-socket-prxy
-description: It is a self-hosted monitoring tool like "Uptime Robot"
-url: https://github.com/hassio-addons/docker-socket-proxy
-codenotary: codenotary@frenck.dev
-webui: http://[HOST]:[PORT:3001]
-init: false
+name: Docker Socket proxy
+version: 0.7.0.11
+slug: docker-socket-proxy
+description: Zero config VPN for building secure networks
+url: https://github.com/cali15/homeassistant-addon-tailscale
+codenotary: cgonzalezq93@gmail.com
+ingress: true
+ingress_port: 0
+ingress_stream: true
+startup: services
+panel_icon: mdi:vpn
 arch:
   - aarch64
   - amd64
   - armhf
   - armv7
   - i386
-ports:
-  3001/tcp: 3001
-ports_description:
-  3001/tcp: Web interface
+init: false
+map:
+  - ssl:rw
+hassio_api: true
+privileged:
+  - NET_ADMIN
+devices:
+  - /dev/net/tun
+host_network: true
+schema:
+  tags: ["match(^tag:[a-zA-Z0-9]-?[a-zA-Z0-9]+$)?"]
+  certificate_tailnet_name: match(^[a-z0-9][a-z0-9\-_]{0,61}\.ts\.net$)?
+  log_level: list(trace|debug|info|warning|error|fatal)?
+image: ghcr.io/cali15/{arch}-addon-tailscale
