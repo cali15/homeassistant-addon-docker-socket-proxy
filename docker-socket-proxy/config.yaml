@@ -1,7 +1,7 @@
 ---
-name: Uptime Kuma
+name: Docker Socket Proxy
 version: dev
-slug: uptime-kuma
+slug: docket-socket-prxy
 description: It is a self-hosted monitoring tool like "Uptime Robot"
 url: https://github.com/hassio-addons/addon-uptime-kuma
 codenotary: codenotary@frenck.dev
